@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo_principal.png" type="image/x-icon">
+    <title>Produtos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Asset&display=swap');
+
+
+        :root{
+            --cor-1: #277FF2;
+            --cor-2: #49C2F2;
+            --cor-3: #4BE2F2;
+            --cor-4: #000;
+            --cor-5: #ffff;
+            --cor-6: #2d2d2d;
+            --cor-7: #555;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-5);
+        }
+        button{
+        background-color: var(--cor-1);
+        width: 160px;
+        border-radius: 30px;
+        }
+        button:hover{
+        background-color: var(--cor-3);
+        }
+      
+        .header {
+            background-color: var(--cor-3);
+            color: var(--cor-5);
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav{
+            padding: 10px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Archivo Black", "sans-serif";
+            color: var(--cor-4);
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+      
+        
+        .product-item {
+            background-color: var(--cor-5);
+            border: 1px solid #ddd;
+            width: 30%;
+            margin: 15px 0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--cor-4);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin-bottom: 15px;
+        }
+
+        .product-item h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: var(--cor-1);
+        }
+
+        .product-item p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: var(--cor-7);
+        }
+
+        .product-item .price {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: var(--cor-4);
+        }
+        .trans{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Nossos Produtos</h1>
+
+    </div>
+    <nav>
+        <button><a href="index.html">Início</a></button>
+        <button><a href="contato.html">Contato</a></button>
+        <button><a href="quiz.html">Quiz</a></button>
+    </nav>
+
+    <div class="container">
+        <h1>Explore nossos produtos</h1>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="imagens/tenisCorrida.webp" width="200" alt="Produto 1">
+                <h2>Tênis de Corrida</h2>
+                <p>Conforto e leveza para sua melhor performance. Disponível em várias cores e tamanhos.</p>
+                <div class="price">R$ 299,99</div>
+            </div>
+
+            <div class="product-item">
+                <img src="imagens/bolaFutebol.webp" width="200" alt="Produto 2">
+                <h2>Bola de Futebol</h2>
+                <p>Bola oficial, aprovada pelas federações, para jogos amadores e profissionais.</p>
+                <div class="price">R$ 129,99</div>
+            </div>
+
+            <div class="product-item">
+                <img src="imagens/camisaTime.webp" width="200" alt="Produto 3">
+                <h2>Camiseta Esportiva</h2>
+                <p>Tecido respirável com tecnologia dry fit, ideal para bons jogos e bons rolês.</p>
+                <div class="price">R$ 189,99</div>
+            </div>
+
+            <div class="product-item">
+                <img src="imagens/kobe6.jpg" width="200" alt="Produto 4">
+                <h2>Kobe 6</h2>
+                <p>Tênis 'queridinho dos jogadores de basquete difícil de achar, mas disponível na melhor loja de artigos esportivos. A SportsWear</p>
+                <div class="price">R$ 989,99</div>
+            </div>
+
+            <div class="product-item">
+                <iframe width="200"  src="https://www.youtube.com/embed/VnE7m8JI7MY?si=_0LucY9Qz3MZXSeu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2>Tênis Casual</h2>
+                <p>Tênis famoso por ser um dos maiores lançamento da Nike, ideal para sair bem na estica e bonito.</p>
+                <div class="price">R$ 309,99</div>
+            </div>
+
+            <div class="product-item">
+                <img src="imagens/camisaPAL.jpg" width="200" alt="Produto 6">
+                <h2>Camisa Palmeiras 23/24</h2>
+                <p>Camisa do Palmeiras nova temporada, bom para jogos com amigos e um bom almoço de domingo com a família.</p>
+                <div class="price">R$ 349,99</div>
+            </div>
+        </div>
+        <div class="trans">
+        <audio controls="controls" autoplay="autoplay">
+            <source src="som/TypeBeat.mp3" type="audio/mp3" >
+        </audio>
+        </div>
+    </div>
+  
+</body>
+</html>
